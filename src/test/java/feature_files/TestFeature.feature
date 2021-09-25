@@ -15,4 +15,5 @@ Feature: Test Feature
     Given I navigate to Gigatron
     And I accept cookies
     And I navigate to contact page
+    And I fill in contact form details
 

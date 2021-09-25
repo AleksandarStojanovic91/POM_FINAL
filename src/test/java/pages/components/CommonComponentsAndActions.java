@@ -4,6 +4,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
@@ -71,6 +72,15 @@ public class CommonComponentsAndActions {
 
         return element.getText().trim();
     }
+    public void selectElementByVisibleText(WebElement element,String elementText){
+        wdWait = new WebDriverWait(driver, WAIT);
+        wdWait.until(ExpectedConditions.visibilityOf(element));
+        wdWait.until(ExpectedConditions.elementToBeClickable(element));
+
+        Select select = new Select(element);
+        select.selectByVisibleText(elementText);
+    }
+
 
 
 }

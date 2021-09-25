@@ -35,5 +35,11 @@ public class ContactPage extends CommonComponentsAndActions {
     WebElement submit;
 
 
-
+    public void fillContactPage(String nameValue, String emailValue, String phoneValue, String contactValue, String subjectValue) {
+        typeText(name, nameValue);
+        typeText(email, emailValue);
+        typeText(phone, phoneValue);
+        selectElementByVisibleText(contact, contactValue);
+        typeText(subject, subjectValue);
+    }
 }
