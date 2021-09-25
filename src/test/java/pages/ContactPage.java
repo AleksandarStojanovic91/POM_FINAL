@@ -42,4 +42,12 @@ public class ContactPage extends CommonComponentsAndActions {
         selectElementByVisibleText(contact, contactValue);
         typeText(subject, subjectValue);
     }
+
+    public void fillContactPage2(String nameValue, String emailValue, String phoneValue, String contactValue, String subjectValue) {
+        typeText(name, nameValue);
+        typeText(email, emailValue);
+        typeText(phone, phoneValue);
+        selectElementByVisibleText(contact, contactValue);
+        typeText(subject, subjectValue);
+    }
 }
