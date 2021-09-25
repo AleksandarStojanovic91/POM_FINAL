@@ -7,6 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import org.testng.Reporter;
+import pages.ContactPage;
 import pages.HomePage;
 import pages.ProductPage;
 import pages.ProductsPage;
@@ -81,5 +82,11 @@ public class TestSteps extends BaseTest{
     public void iNavigateToContactPage() {
         HomePage homePage = new HomePage(driver);
         homePage.headerComponent.contactPage.click();
+    }
+
+    @And("I fill in contact form details")
+    public void iFillInContactFormDetails() {
+        ContactPage contactPage = new ContactPage(driver);
+        contactPage.fillContactPage("Ime","test@test.com","12312312","Prodaja","Poruka");
     }
 }
