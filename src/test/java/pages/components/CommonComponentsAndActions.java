@@ -1,6 +1,5 @@
 package pages.components;
 
-import io.cucumber.java.eo.Se;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
