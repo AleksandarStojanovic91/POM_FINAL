@@ -76,4 +76,10 @@ public class TestSteps extends BaseTest{
         Assert.assertEquals(productPage.buttonCartItemNum.getText(), "1");
         Assert.assertEquals(productPage.cartItemNum.getText(), "1");
     }
+
+    @And("I navigate to contact page")
+    public void iNavigateToContactPage() {
+        HomePage homePage = new HomePage(driver);
+        homePage.headerComponent.contactPage.click();
+    }
 }
