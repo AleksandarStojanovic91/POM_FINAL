@@ -49,4 +49,9 @@ public class ContactPage extends CommonComponentsAndActions {
         selectElementByVisibleText(contact, contactValue);
         typeText(subject, subjectValue);
     }
+
+    public void submitForm(){
+        clickElement(submitButton);
+    }
+
 }
