@@ -32,8 +32,7 @@ public class ContactPage extends CommonComponentsAndActions {
     @FindBy(css = "[name=\"subject\"]")
     WebElement subject;
     @FindBy(xpath = "//div[@class=\"submit\"]/button")
-    WebElement submitButton123;
-
+    WebElement submitButton;
 
     public void fillContactPage(String nameValue, String emailValue, String phoneValue, String contactValue, String subjectValue) {
         typeText(name, nameValue);
