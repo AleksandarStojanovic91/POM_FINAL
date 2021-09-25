@@ -1,6 +1,6 @@
 Feature: Test Feature
 
-  Scenario: Test Scenario
+  Scenario: Buy Product
 
     Given I navigate to Gigatron
     And I accept cookies
@@ -9,4 +9,10 @@ Feature: Test Feature
     And I click on product index "0"
     And I add product to cart
     Then I verify that item is added to the cart
+
+  Scenario: Contact
+
+    Given I navigate to Gigatron
+    And I accept cookies
+    And I navigate to contact page
 

@@ -17,6 +17,8 @@ public class HeaderComponent extends CommonComponentsAndActions{
 
     @FindBy(css = "#searchbox input")
     WebElement search;
+    @FindBy(xpath = "//ul[@id=\"header-nav\"]//a[text()='Kontakt']")
+    public WebElement contactPage;
 
     public void search(String searchItem){
         typeText(search, searchItem);
